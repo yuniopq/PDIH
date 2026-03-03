@@ -1,0 +1,8 @@
+bc/
+S1-codigo/
+*.OBJ
+*.MAP
+*.EXE
+*.TR
+*.TD
+EOF
