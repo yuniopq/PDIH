@@ -18,7 +18,7 @@ El proyecto se ha estructurado de forma modular para fomentar la reutilización 
 * **`setcursortype(modo)`**: Selección de cursor invisible, normal o grueso (INT 10h, AH=01h).
 * **`setvideomode(modo)`**: Cambio de modo de video (INT 10h, AH=00h).
 * **`getvideomode()`**: Consulta del modo de video actual (INT 10h, AH=0Fh).
-* **`textcolor()` / `textbackground()**`: Gestión de atributos de color.
+* **`textcolor()` / `textbackground()`**: Gestión de atributos de color.
 * **`clrscr()`**: Borrado de pantalla mediante scroll (INT 10h, AH=06h).
 * **`cputchar(c)`**: Escritura de carácter con atributo y avance de cursor (INT 10h, AH=09h).
 * **`getche()`**: Lectura de teclado con eco (INT 16h, AH=00h).
