@@ -33,7 +33,7 @@ El proyecto se ha estructurado de forma modular para fomentar la reutilización 
 
 ### 1. Dibujo de Recuadros (Modo Texto)
 Demostración de la función dibujar_cuadrado() con bordes ASCII y colores.
-![Recuadro](./img/dibujar_cuadrado.png)
+![Recuadro](./img/recuadro.png)
 
 ### 2. Modo Gráfico (CGA)
 Escena de una casa dibujada píxel a píxel en modo 4 (320x200).
@@ -41,4 +41,4 @@ Escena de una casa dibujada píxel a píxel en modo 4 (320x200).
 
 ### 3. ASCII Art (Gato Gigante)
 Renderizado de arte ASCII complejo respetando el posicionamiento y color.
-![Gato](./img/dibujar_gato_gigante.png)
+![Gato](./img/dibujar_gato_ascii.png)
