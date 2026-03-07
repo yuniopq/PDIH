@@ -1,16 +1,12 @@
 # Práctica 1: Librería de E/S mediante Interrupciones BIOS
 
-Este proyecto consiste en el desarrollo de una librería de funciones de bajo nivel en lenguaje C para sistemas MS-DOS. La librería permite controlar la pantalla (tanto en modo texto como gráfico) y el teclado interactuando directamente con las interrupciones de la BIOS (INT 10h e INT 16h).
-
 ## Estructura del Proyecto
-
-El proyecto se ha estructurado de forma modular para fomentar la reutilización del código:
 
 * **`mi_io.h`**: Archivo de cabecera con los prototipos de todas las funciones implementadas.
 * **`mi_io.c`**: Implementación de la librería con el código de las interrupciones BIOS.
 * **`main.c`**: Programa principal que implementa un menú interactivo para evaluar las funcionalidades.
 
-## 🛠️ Funciones Implementadas
+## Funciones Implementadas
 
 ### Requisitos Mínimos
 
