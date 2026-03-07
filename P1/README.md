@@ -1,8 +1,8 @@
-# PDIH - Práctica 1: Librería de E/S mediante Interrupciones BIOS
+# Práctica 1: Librería de E/S mediante Interrupciones BIOS
 
 Este proyecto consiste en el desarrollo de una librería de funciones de bajo nivel en lenguaje C para sistemas MS-DOS. La librería permite controlar la pantalla (tanto en modo texto como gráfico) y el teclado interactuando directamente con las interrupciones de la BIOS (INT 10h e INT 16h).
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto se ha estructurado de forma modular para fomentar la reutilización del código:
 
@@ -29,37 +29,16 @@ El proyecto se ha estructurado de forma modular para fomentar la reutilización 
 * **Modo Gráfico CGA**: Función `pixel()` y una escena completa (`dibujar_dibujo()`) en modo 320x200.
 * **ASCII Art**: `dibujar_gato_gigante()` renderiza arte complejo de 24 líneas gestionando caracteres de escape.
 
-## 🚀 Compilación y Ejecución
+## Capturas
 
-Para compilar el proyecto en **DOSBox** con Borland C:
+### 1. Dibujo de Recuadros (Modo Texto)
+Demostración de la función dibujar_cuadrado() con bordes ASCII y colores.
+![Recuadro](./img/dibujar_cuadrado.png)
 
-```cmd
-c main
+### 2. Modo Gráfico (CGA)
+Escena de una casa dibujada píxel a píxel en modo 4 (320x200).
+![Casa](./img/dibujar_dibujo.png)
 
-```
-
-Para ejecutar el programa:
-
-```cmd
-main
-
-```
-
-## 📸 Evidencias de Funcionamiento
-
-### Modo Texto: Recuadros y Colores
-
-Prueba de la función `dibujar_cuadrado()` utilizando bordes ASCII dobles y gestión de color de fondo/texto.
-
-### Modo Gráfico: CGA 320x200
-
-Representación de una escena (casa) utilizando la función `pixel()` en modo gráfico 4.
-
-### ASCII Art: Gato Gigante
-
-Renderizado de arte ASCII complejo mediante el uso de `cputchar()` y posicionamiento dinámico.
-
----
-
-**Autor:** ZhiXiang Zhou Wang
-**Repositorio:** PDIH / P1
+### 3. ASCII Art (Gato Gigante)
+Renderizado de arte ASCII complejo respetando el posicionamiento y color.
+![Gato](./img/dibujar_gato_gigante.png)
