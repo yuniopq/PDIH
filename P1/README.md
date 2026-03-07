@@ -32,13 +32,13 @@ Interfaz del programa principal controlada mediante la lectura de teclado (`getc
 ![Menú Principal](./img/menu.png)
 
 ### 1. Dibujo de Recuadros (Modo Texto)
-Demostración de la función dibujar_cuadrado() con bordes ASCII y colores.
+Captura de la función dibujar_cuadrado() con bordes ASCII y colores.
 ![Recuadro](./img/recuadro.png)
 
 ### 2. Modo Gráfico (CGA)
-Escena de una casa dibujada píxel a píxel en modo 4 (320x200).
+Captura de la funcion dibujar_dibujo(), una casa dibujada píxel a píxel en modo 4 (320x200).
 ![Casa](./img/dibujo_modo_grafico.png)
 
 ### 3. ASCII Art (Gato Gigante)
-Renderizado de arte ASCII complejo respetando el posicionamiento y color.
+Captura de la funcion dibujar_gato_grande() en formato ASCII respetando el posicionamiento y color.
 ![Gato](./img/dibujo_gato_ascii.png)
