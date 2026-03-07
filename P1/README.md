@@ -31,14 +31,18 @@ El proyecto se ha estructurado de forma modular para fomentar la reutilización 
 
 ## Capturas
 
+### Menú Principal Interactvo
+Interfaz del programa principal controlada mediante la lectura de teclado (`getche`) y limpieza de pantalla (`clrscr`).
+![Menú Principal](./img/menu.png)
+
 ### 1. Dibujo de Recuadros (Modo Texto)
 Demostración de la función dibujar_cuadrado() con bordes ASCII y colores.
 ![Recuadro](./img/recuadro.png)
 
 ### 2. Modo Gráfico (CGA)
 Escena de una casa dibujada píxel a píxel en modo 4 (320x200).
-![Casa](./img/dibujar_dibujo.png)
+![Casa](./img/dibujo_modo_grafico.png)
 
 ### 3. ASCII Art (Gato Gigante)
 Renderizado de arte ASCII complejo respetando el posicionamiento y color.
-![Gato](./img/dibujar_gato_ascii.png)
+![Gato](./img/dibujo_gato_ascii.png)
