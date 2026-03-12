@@ -1,0 +1,29 @@
+# Pasos realizados para el Seminario LKM - PDIH (UGR)
+
+# 1. Preparacion del entorno e instalacion de cabeceras
+uname -a
+sudo apt-get update
+sudo apt-get install linux-headers-$(uname -r)
+
+# 2. Compilacion del modulo
+# Asegurarse de tener el Makefile en la misma carpeta
+make
+
+# 3. Verificacion del archivo generado
+ls -l *.ko
+
+# 4. Prueba del modulo en el kernel
+sudo insmod hello.ko
+lsmod | grep hello
+
+# 5. Inspeccion de los metadatos del autor
+modinfo hello.ko
+
+# 6. Descarga del modulo
+sudo rmmod hello
+
+# 7. Comprobacion de la salida en los logs del sistema
+# Acceso como superusuario para visualizar registros
+sudo su
+cd /var/log
+tail -n 20 kern.log
