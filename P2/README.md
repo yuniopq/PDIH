@@ -47,7 +47,7 @@ Estado final del juego tras perder la pelota, mostrando la puntuación definitiv
 - `hola.c`: Prueba básica de inicialización de ncurses.
 - `ventana.c`: Ejemplo de gestión de ventanas y colores.
 - `pelota.c`: Lógica base de movimiento y rebotes.
-- `pong_final.c`: Código fuente completo del juego final.
+- `pong.c`: Código fuente completo del juego final.
 - `README.md`: Documentación del proyecto.
 
 
