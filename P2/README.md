@@ -16,7 +16,7 @@ sudo apt install build-essential libncurses5-dev libncursesw5-dev
 ## Compilación y Ejecución
 
 ```bash
-gcc pong_final.c -o pong -lncurses
+gcc pong.c -o pong -lncurses
 ./pong
 ```
 
