@@ -1,5 +1,4 @@
-# Práctica 2: Interfaces de Usuario en Modo Texto (ncurses)
-
+# Práctica 2: Uso de bibliotecas de programación de interfaces de usuario en modo texto
 ## Contenido del Proyecto
 E juego incluye:
 - **Pantalla de Bienvenida:** Presentación del autor y explicación de controles.
