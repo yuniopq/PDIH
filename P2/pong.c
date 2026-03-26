@@ -44,7 +44,7 @@ int main() {
 
         while (1) {
             tecla = getch();
-            
+            flushinp();
             // Control de la pala
             if (tecla == KEY_UP && pala_y > 1) pala_y--;
             if (tecla == KEY_DOWN && pala_y < ALTO - PALA_TAM - 1) pala_y++;
