@@ -55,8 +55,8 @@ A continuación se puede observar el efecto de barrido lateral generado por la s
 | :--- | :--- |
 | **Fotorresistencia (LDR)** | Pin A2 (Analógico) |
 | **LED Rojo** | Pin 9 (PWM) |
-| **Resistencia 10k Omnios** | GND |
-| **Resistencia 220 Omnios**| Pin 9 |
+| **Resistencia 10kΩ** | GND |
+| **Resistencia 220Ω**| Pin 9 |
 
 ### Esquema de conexiones
 ![Esquema Fotorresistencia](img/Requisito_Ampliado_3_Detector_de_la_cantidad_de_luz.png)
