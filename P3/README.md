@@ -87,6 +87,7 @@ void loop() {
 > [\!TIP]
 > **[ Haz clic aquí para ver el vídeo del sensor de luz](enlace)**
 
+-----
 
 ## Requisito Ampliado 4: Activación del Motor
 
