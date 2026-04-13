@@ -53,8 +53,8 @@ A continuación se puede observar el efecto de barrido lateral generado por la s
 
 | Componente | Pin Arduino |
 | :--- | :--- |
-| **Fotorresistencia (LDR)** | Pin A2 (Analógico) |
-| **LED Rojo** | Pin 9 (PWM) |
+| **Fotorresistencia (LDR)** | Pin A2 |
+| **LED Blanco** | Pin 9 |
 | **Resistencia 10kΩ** | GND |
 | **Resistencia 220Ω**| Pin 9 |
 
@@ -95,7 +95,7 @@ void loop() {
 
 | Componente  | Pin Arduino |
 | :---  | :--- |
-| **Micro Servo SG90** | Pin 8 |
+| **Micro Servo** | Pin 8 |
 | **Pulsador** | Pin 9 |
 | **Resistencia 10kΩ** | GND |
 
