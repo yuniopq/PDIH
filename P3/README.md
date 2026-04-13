@@ -12,7 +12,7 @@
 ### Esquema de conexiones
 ![Esquema secuencia luces LEDs](img/Requisito_Ampliado_1_Secuencia_de_LEDs.png)
 
-### Código Fuente Documentado
+### Código Fuente
 
 ```cpp
 void setup()
