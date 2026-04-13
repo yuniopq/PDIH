@@ -6,10 +6,12 @@
 
 | Componente  | Pin Arduino |
 | :---  | :--- |
-| **Micro Servo SG90** | Pin 8 (PWM) |
+| **Micro Servo SG90** | Pin 8 |
 | **Pulsador** | Pin 9 |
 | **Resistencia 10kΩ** | GND |
 
+### Esquema de conexiones
+![Esquema Servo](img/Requisito_Ampliado_4_Activación_del_motor.png)
 
 ### Código Fuente
 
