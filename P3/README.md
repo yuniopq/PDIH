@@ -67,7 +67,7 @@ Se puede observar la transición lineal entre los tres estados (pines 11, 12 y 1
 | **Resistencia 10kΩ** | Para el pulsador |
 
 ### Esquema de conexiones
-![Esquema semaforo con Interruptor](/img/Requisito_2_Control_con_Interruptor.png)
+![Esquema semaforo con Interruptor](./img/Requisito_2_Control_con_Interruptor.png)
 
 ### Código Fuente
 
