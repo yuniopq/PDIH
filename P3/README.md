@@ -14,7 +14,7 @@
 ### Esquema de conexiones
 ![Esquema semaforo LEDs](img/Requisito_1_Semáforo_de_3_LEDs.png)
 
-### Código Fuente Documentado
+### Código Fuente
 
 ```cpp
 void setup()
@@ -69,7 +69,7 @@ Se puede observar la transición lineal entre los tres estados (pines 11, 12 y 1
 ### Esquema de conexiones
 ![Esquema semaforo con Interruptor](/img/Requisito_2_Control_con_Interruptor.png)
 
-### Código Fuente Documentado
+### Código Fuente
 
 ```cpp
 void setup()
