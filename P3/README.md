@@ -12,7 +12,7 @@
 | **Resistencia 220 Omnios**| Pin 9 |
 
 ### Esquema de conexiones (Tinkercad)
-![Esquema Fotorresistencia](img/requisito_ampliado_3_detector_de_la_cantidad_de_luz1.ino)
+![Esquema Fotorresistencia](img/Requisito_Ampliado_3_Detector_de_la_cantidad_de_luz.png)
 
 ### Código Fuente Documentado
 
