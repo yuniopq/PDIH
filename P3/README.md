@@ -4,11 +4,11 @@
 
 ### Identificación de componentes
 
-| Componente | Función | Pin Arduino |
-| :--- | :--- | :--- |
-| **Micro Servo SG90** | Actuador de posición (0-180°) | Pin 8 (PWM) |
-| **Pulsador** | Entrada digital de control | Pin 9 |
-| **Resistencia 10kΩ** | Configuración *Pull-down* para el pulsador | GND |
+| Componente  | Pin Arduino |
+| :---  | :--- |
+| **Micro Servo SG90** | Pin 8 (PWM) |
+| **Pulsador** | Pin 9 |
+| **Resistencia 10kΩ** | GND |
 
 
 ### Código Fuente
