@@ -34,7 +34,6 @@ void setup() {
   pinMode(pinBoton, INPUT); 
   
   miServo.write(0);       // Iniciamos en 0 grados
-  delay(500);             
 }
 
 void loop() {
