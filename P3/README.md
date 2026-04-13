@@ -1,5 +1,126 @@
 # Práctica 3: Experimentación con Arduino
 
+## Requisito 1: Semáforo de 3 LEDs
+
+### Identificación de componentes
+
+| Componente | Pin Arduino |
+| :--- | :--- |
+| **LED Rojo** | Pin 11 |
+| **LED Amarillo** | Pin 12 |
+| **LED Verde** | Pin 13 |
+| **Resistencias 220Ω (x3)** | Una por cada LED |
+
+### Esquema de conexiones
+![Esquema semaforo LEDs](img/Requisito_1_Semáforo_de_3_LEDs.png)
+
+### Código Fuente Documentado
+
+```cpp
+void setup()
+{
+  // Configuración de los pines como salida
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  // Enciende el LED 11 y espera 1.5 segundos
+  digitalWrite(11, HIGH);
+  delay(1500); 
+  digitalWrite(11, LOW);
+
+  // Enciende el LED 12 y espera 1.5 segundos
+  digitalWrite(12, HIGH);
+  delay(1500);
+  digitalWrite(12, LOW);
+
+  // Enciende el LED 13 y espera 1.5 segundos
+  digitalWrite(13, HIGH);
+  delay(1500);
+  digitalWrite(13, LOW);
+}
+```
+
+### Muestra de funcionamiento
+
+Se puede observar la transición lineal entre los tres estados (pines 11, 12 y 13) con un tiempo de conmutación constante:
+
+> [\!TIP]
+> **[ Haz clic aquí para ver el vídeo de la secuencia de 3 LEDs](https://www.google.com/search?q=enlace)**
+
+-----
+
+## Requisito 2: Control con Interruptor
+
+### Identificación de componentes
+
+| Componente | Pin Arduino |
+| :--- | :--- |
+| **LED Rojo** | Pin 11 |
+| **LED Amarillo** | Pin 12 |
+| **LED Verde** | Pin 13 |
+| **Pulsador** | Pin 7 |
+| **Resistencias 220Ω (x3)** | Para los LEDs |
+| **Resistencia 10kΩ** | Para el pulsador |
+
+### Esquema de conexiones
+![Esquema semaforo con Interruptor](/img/Requisito_2_Control_con_Interruptor.png)
+
+### Código Fuente Documentado
+
+```cpp
+void setup()
+{
+  // Configuración de salidas para los LEDs
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  
+  // Configuración del pin 7 como entrada para el pulsador
+  pinMode(7, INPUT);
+}
+
+void loop()
+{
+  // Si el pulsador está presionado (entrada en HIGH)
+  if (digitalRead(7) == HIGH)
+  {
+    // Solo el LED 11 permanece encendido
+    digitalWrite(11, HIGH);  
+    digitalWrite(12, LOW );  
+    digitalWrite(13, LOW );  
+  }
+  // Si el pulsador no está presionado
+  else
+  {
+    // Ejecuta la secuencia cíclica de 1.5 segundos por LED
+    digitalWrite(11, HIGH);
+    delay(1500); 
+    digitalWrite(11, LOW);
+
+    digitalWrite(12, HIGH);
+    delay(1500);
+    digitalWrite(12, LOW);
+
+    digitalWrite(13, HIGH);
+    delay(1500);
+    digitalWrite(13, LOW);
+  }
+}
+```
+
+### Muestra de funcionamiento
+
+En esta demostración se observa cómo el pulsador actúa como un interruptor de prioridad, deteniendo la secuencia cíclica y manteniendo un estado estático mientras permanece pulsado:
+
+> [\!TIP]
+> **[ Haz clic aquí para ver el vídeo del semáforo con pulsador](https://www.google.com/search?q=enlace)**
+
+-----
+
 ## Requisito Ampliado 1: Secuencia de LEDs
 
 ### Identificación de componentes
