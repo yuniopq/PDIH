@@ -8,7 +8,7 @@
 - **Resistencia 10kΩ**
   
 ### Esquema de conexiones (Tinkercad)
-![Esquema Servo](/img/Requisito Ampliado 4_ Activación del motor.png)
+![Esquema Servo](./img/Requisito Ampliado 4_ Activación del motor.png)
 
 ### Código Fuente Documentado
 ```cpp
