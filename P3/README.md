@@ -8,48 +8,30 @@
 | :--- | :--- |
 | **Fotorresistencia (LDR)** | Pin A2 (Analógico) |
 | **LED Rojo** | Pin 9 (PWM) |
-| **Resistencia 10k$\Omega$** | GND |
-| **Resistencia 220$\Omega$**| Pin 9 |
+| **Resistencia 10k Omnios** | GND |
+| **Resistencia 220 Omnios**| Pin 9 |
 
 ### Esquema de conexiones (Tinkercad)
+![Esquema Fotorresistencia](img/requisito_ampliado_3_detector_de_la_cantidad_de_luz1.ino)
 
 ### Código Fuente Documentado
 
 ```cpp
-/*
- * Práctica 3 - PDIH
- * Requisito: Detector de cantidad de luz
- * Alumno: ZhiXiang Zhou Wang
- * Descripción: Control de brillo de LED (PWM) basado en sensor LDR.
- */
-
 void setup() {
-  // Pin 9 soporta PWM para variar el voltaje del LED
-  pinMode(9, OUTPUT); 
-  
-  // Iniciamos comunicación serie para monitorizar los niveles de luz
-  Serial.begin(9600); 
+  pinMode(9, OUTPUT); // Pin 9 como salida para el LED
 }
 
 void loop() {
-  // Leemos el valor del sensor (0 a 1023)
-  // Usamos A2 debido a mayor estabilidad en la placa física
+  // Lee el nivel de luz del sensor en el pin analógico A2
   int intensidadLuz = analogRead(A2); 
-  
-  // Imprimimos el valor bruto para depuración
-  Serial.print("Valor LDR: ");
-  Serial.println(intensidadLuz);
 
-  /* * Mapeamos el valor:
-   * Entrada: 0 - 1023 (Rango del sensor)
-   * Salida: 255 - 0 (Invertido para que brille más con menos luz)
-   */
-  int brilloLED = map(intensidadLuz, 0, 1023, 255, 0);
-  
-  // Enviamos la señal PWM al LED
-  analogWrite(9, brilloLED); 
-  
-  delay(10); // Pequeña pausa para estabilidad
+  // Mapea el valor de entrada (0-1023) al rango de salida del LED (255-0)
+  // Se invierte (255 a 0) para que el LED brille más cuando hay menos luz
+  intensidadLuz = map(intensidadLuz, 0, 1023, 255, 0);
+
+  analogWrite(9, intensidadLuz); // Aplica el brillo resultante al LED
+
+  delay(10); // Pequeña pausa para estabilizar la señal
 }
 ```
 
@@ -75,13 +57,6 @@ void loop() {
 ### Código Fuente
 
 ```cpp
-/*
- * Práctica 3 - PDIH
- * Requisito Ampliado 4: Activación del motor
- * Alumno: ZhiXiang Zhou Wang
- * Descripción: El servo avanza mientras se pulsa y retrocede al soltar.
- */
-
 #include <Servo.h>
 
 Servo miServo;       
