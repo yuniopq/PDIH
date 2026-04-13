@@ -1,5 +1,52 @@
 # Práctica 3: Experimentación con Arduino
 
+## Requisito Ampliado 1: Secuencia de LEDs
+
+### Identificación de componentes
+
+| Componente | Pin Arduino |
+| :--- | :--- |
+| **LED Rojo (x4)** | Pines 10, 11, 12 y 13 |
+| **Resistencia 220Ω (x4)** | Una por cada LED |
+
+### Esquema de conexiones
+![Esquema secuencia luces LEDs](img/Requisito_Ampliado_1_Secuencia_de_LEDs.png)
+
+### Código Fuente Documentado
+
+```cpp
+void setup()
+{
+  // Configuración de los pines 10 al 13 como salidas
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  // Secuencia de ida: del pin 10 al 13
+  digitalWrite(10, HIGH); delay(100); digitalWrite(10, LOW);
+  digitalWrite(11, HIGH); delay(100); digitalWrite(11, LOW);
+  digitalWrite(12, HIGH); delay(100); digitalWrite(12, LOW);
+  digitalWrite(13, HIGH); delay(100); digitalWrite(13, LOW);
+  
+  // Secuencia de vuelta: del pin 12 al 11
+  digitalWrite(12, HIGH); delay(100); digitalWrite(12, LOW);
+  digitalWrite(11, HIGH); delay(100); digitalWrite(11, LOW);
+}
+```
+
+### Muestra de funcionamiento
+
+A continuación se puede observar el efecto de barrido lateral generado por la secuencia programada:
+
+> [\!TIP]
+> **[ Haz clic aquí para ver el vídeo de la secuencia de LEDs](https://www.google.com/search?q=enlace)**
+
+-----
+
 ## Requisito Ampliado 3: Detector de la cantidad de luz
 
 ### Identificación de componentes
@@ -11,7 +58,7 @@
 | **Resistencia 10k Omnios** | GND |
 | **Resistencia 220 Omnios**| Pin 9 |
 
-### Esquema de conexiones (Tinkercad)
+### Esquema de conexiones
 ![Esquema Fotorresistencia](img/Requisito_Ampliado_3_Detector_de_la_cantidad_de_luz.png)
 
 ### Código Fuente Documentado
