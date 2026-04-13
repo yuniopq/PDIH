@@ -168,6 +168,68 @@ A continuación se puede observar el efecto de barrido lateral generado por la s
 
 -----
 
+## Requisito Ampliado 2: Detector de la distancia
+
+### Identificación de componentes
+
+| Componente | Pin Arduino |
+| :--- | :--- |
+| **Sensor Ultrasonidos** | Trig:Pin 9, Echo: Pin 8 |
+| **Buzzer** | Pin 6 |
+
+### Esquema de conexiones
+![Esquema Detector de la distancia](img/Requisito_Ampliado_2_Detector_de_la_distancia.png)
+
+### Código Fuente
+
+```cpp
+void setup()
+{
+  pinMode(6, OUTPUT); // Pin para el zumbador
+  pinMode(8, INPUT);  // Pin Echo del sensor 
+  pinMode(9, OUTPUT); // Pin Trig del sensor 
+}
+
+void loop()
+{
+  // Generamos el pulso de activación del sensor (Trigger)
+  digitalWrite(9, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(9, LOW);
+
+  // pulseIn mide cuánto tiempo tarda el pin 8 (Echo) en volver a HIGH
+  long duracion = pulseIn(8, HIGH); 
+  
+  // Convertimos el tiempo en distancia (cm)
+  // La velocidad del sonido es 343 m/s (0.0343 cm/us), se divide por 2 por el ida y vuelta
+  int distancia = duracion * 0.01723; 
+  
+  // Filtro de distancia para activar el sonido (entre 5 y 330 cm)
+  if (distancia > 5 && distancia < 330) {
+    
+    // MAPEO DE FRECUENCIA: A menor distancia, sonido más agudo (2000Hz)
+    int tono = map(distancia, 3, 330, 2000, 500); 
+    
+    tone(6, tono);          // Genera el sonido
+    delay(100);             // Duración del pitido
+    noTone(6);              // Silencio momentáneo
+    
+    // MAPEO DE RITMO: A menor distancia, los pitidos son más rápidos
+    int pausa = map(distancia, 3, 330, 20, 500); 
+    delay(pausa); 
+  }
+}
+```
+
+### Muestra de funcionamiento
+
+En este sistema, el zumbador varía tanto su frecuencia (tono) como la velocidad de los pulsos en función de la cercanía del objeto, proporcionando una alerta intuitiva de proximidad:
+
+> [\!TIP]
+> **[ Haz clic aquí para ver el vídeo del detector de distancia](https://www.google.com/search?q=enlace)**
+
+-----
+
 ## Requisito Ampliado 3: Detector de la cantidad de luz
 
 ### Identificación de componentes
