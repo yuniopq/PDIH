@@ -1,6 +1,65 @@
 # Práctica 3: Experimentación con Arduino
 
-## Requisito 4: Activación del Motor
+## Requisito Ampliado 3: Detector de la cantidad de luz
+
+### Identificación de componentes
+
+| Componente | Pin Arduino |
+| :--- | :--- |
+| **Fotorresistencia (LDR)** | Pin A2 (Analógico) |
+| **LED Rojo** | Pin 9 (PWM) |
+| **Resistencia 10k$\Omega$** | GND |
+| **Resistencia 220$\Omega$**| Pin 9 |
+
+### Esquema de conexiones (Tinkercad)
+
+### Código Fuente Documentado
+
+```cpp
+/*
+ * Práctica 3 - PDIH
+ * Requisito: Detector de cantidad de luz
+ * Alumno: ZhiXiang Zhou Wang
+ * Descripción: Control de brillo de LED (PWM) basado en sensor LDR.
+ */
+
+void setup() {
+  // Pin 9 soporta PWM para variar el voltaje del LED
+  pinMode(9, OUTPUT); 
+  
+  // Iniciamos comunicación serie para monitorizar los niveles de luz
+  Serial.begin(9600); 
+}
+
+void loop() {
+  // Leemos el valor del sensor (0 a 1023)
+  // Usamos A2 debido a mayor estabilidad en la placa física
+  int intensidadLuz = analogRead(A2); 
+  
+  // Imprimimos el valor bruto para depuración
+  Serial.print("Valor LDR: ");
+  Serial.println(intensidadLuz);
+
+  /* * Mapeamos el valor:
+   * Entrada: 0 - 1023 (Rango del sensor)
+   * Salida: 255 - 0 (Invertido para que brille más con menos luz)
+   */
+  int brilloLED = map(intensidadLuz, 0, 1023, 255, 0);
+  
+  // Enviamos la señal PWM al LED
+  analogWrite(9, brilloLED); 
+  
+  delay(10); // Pequeña pausa para estabilidad
+}
+```
+
+### Muestra de funcionamiento (Vídeo)
+
+> [\!TIP]
+> **[ Haz clic aquí para ver el vídeo del sensor de luz](enlace)**
+
+
+## Requisito Ampliado 4: Activación del Motor
 
 ### Identificación de componentes
 
@@ -60,6 +119,6 @@ void loop() {
 
 A continuación se muestra el funcionamiento en el dispositivo físico, demostrando la respuesta del motor al pulsador:
 
-> [\!vçVideo funcionamiento Requisito Ampliado 4]
+> [\!Video funcionamiento Requisito Ampliado 4]
 > **[Haz clic aquí para ver el vídeo de la demostración física](enlace)**
 
