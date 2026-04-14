@@ -46,10 +46,7 @@ void loop()
 
 ### Muestra de funcionamiento
 
-Se puede observar la transición lineal entre los tres estados (pines 11, 12 y 13) con un tiempo de conmutación constante:
-
-> [\!TIP]
-> **[ Haz clic aquí para ver el vídeo de la secuencia de 3 LEDs](https://www.google.com/search?q=enlace)**
+> **[ Haz clic aquí para ver el vídeo de la secuencia de 3 LEDs](https://drive.google.com/file/d/11bFytVKYp34fu2wRTl2E3FNA-WSxzAsH/view?usp=drive_link)**
 
 -----
 
