@@ -312,3 +312,51 @@ void loop() {
 
 > **[ Haz clic aquí para ver el vídeo del motor](https://drive.google.com/file/d/14XieaFvIhKaVEkI8q-A1XcVrB40KDHBX/view?usp=drive_link)**
 
+-----
+
+## Requisito Extra: Simulador de proximidad
+
+Como el *Arduino Starter Kit* no incluye el sensor de ultrasonidos, se ha desarrollado esta variante física utilizando un potenciómetro para simular la variación de distancia y comprobar el funcionamiento del sistema de alertas sonoras.
+
+### Identificación de componentes
+
+| Componente | Pin Arduino |
+| :--- | :--- |
+| **Potenciómetro (10kΩ)** | Pin A0 |
+| **Buzzer** | Pin 6 (Digital) |
+
+### Esquema de conexiones
+![Esquema potenciómetro](img/Requisito_Extra_Simulador_de_proximidad.png)
+
+### Código Fuente Documentado
+
+```cpp
+void setup()
+{
+  pinMode(6, OUTPUT); // Pin para el zumbador
+}
+
+void loop()
+{
+  // Leemos el potenciómetro (valor entre 0 y 1023)
+  // Simulamos que 0 es cerca y 1023 es lejos
+  int lectura = analogRead(A0); 
+
+  // MAPEO DE FRECUENCIA: 
+  // A menor valor (más cerca), el tono es más agudo (2000Hz)
+  int tono = map(lectura, 0, 1023, 2000, 500); 
+  
+  tone(6, tono);          // Genera el pitido
+  delay(100);             // Duración del pitido
+  noTone(6);              // Silencio
+
+  // MAPEO DE RITMO: 
+  // A menor valor (más cerca), las pausas son más cortas 
+  int pausa = map(lectura, 0, 1023, 20, 500); 
+  delay(pausa); 
+}
+```
+
+### Muestra de funcionamiento
+
+> **[ Haz clic aquí para ver el vídeo de la simulación física con potenciómetro](https://drive.google.com/file/d/1QXF1sfrE2lgh22amGmbz4v42njAPy1Eg/view?usp=drive_link)**
