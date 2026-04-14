@@ -328,7 +328,7 @@ Como el *Arduino Starter Kit* no incluye el sensor de ultrasonidos, se ha desarr
 ### Esquema de conexiones
 ![Esquema potenciómetro](img/Requisito_Extra_Simulador_de_proximidad.png)
 
-### Código Fuente Documentado
+### Código Fuente
 
 ```cpp
 void setup()
