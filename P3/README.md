@@ -255,7 +255,6 @@ void loop() {
 
 ### Muestra de funcionamiento (Vídeo)
 
-> [\!TIP]
 > **[ Haz clic aquí para ver el vídeo del sensor de luz](https://drive.google.com/file/d/1zJbwFAdB_qnSSBTCI5L_vPtjYVlP-TeX/view?usp=drive_link)**
 
 -----
@@ -311,5 +310,5 @@ void loop() {
 
 ### Muestra de funcionamiento 
 
-> **[Haz clic aquí para ver el vídeo del motor]([enlace](https://drive.google.com/file/d/14XieaFvIhKaVEkI8q-A1XcVrB40KDHBX/view?usp=drive_link))**
+> **[ Haz clic aquí para ver el vídeo del motor](https://drive.google.com/file/d/14XieaFvIhKaVEkI8q-A1XcVrB40KDHBX/view?usp=drive_link)**
 
