@@ -111,10 +111,7 @@ void loop()
 
 ### Muestra de funcionamiento
 
-En esta demostración se observa cómo el pulsador actúa como un interruptor de prioridad, deteniendo la secuencia cíclica y manteniendo un estado estático mientras permanece pulsado:
-
-> [\!TIP]
-> **[ Haz clic aquí para ver el vídeo del semáforo con pulsador](https://www.google.com/search?q=enlace)**
+> **[ Haz clic aquí para ver el vídeo del semáforo con pulsador](https://drive.google.com/file/d/1mNK3afYGAeXAkLNNbqj_iWbB6z6kFUne/view?usp=drive_link)**
 
 -----
 
@@ -158,10 +155,7 @@ void loop()
 
 ### Muestra de funcionamiento
 
-A continuación se puede observar el efecto de barrido lateral generado por la secuencia programada:
-
-> [\!TIP]
-> **[ Haz clic aquí para ver el vídeo de la secuencia de LEDs](https://www.google.com/search?q=enlace)**
+> **[ Haz clic aquí para ver el vídeo de la secuencia de LEDs](https://drive.google.com/file/d/1MZv-iwTlAnRQHXVWCCHKRIWKzO15Nl_5/view?usp=drive_link)**
 
 -----
 
@@ -220,10 +214,7 @@ void loop()
 
 ### Muestra de funcionamiento
 
-En este sistema, el zumbador varía tanto su frecuencia (tono) como la velocidad de los pulsos en función de la cercanía del objeto, proporcionando una alerta intuitiva de proximidad:
-
-> [\!TIP]
-> **[ Haz clic aquí para ver el vídeo del detector de distancia](https://www.google.com/search?q=enlace)**
+> **[ Haz clic aquí para ver el vídeo del detector de distancia](https://drive.google.com/file/d/1QXF1sfrE2lgh22amGmbz4v42njAPy1Eg/view?usp=drive_link)**
 
 -----
 
@@ -265,7 +256,7 @@ void loop() {
 ### Muestra de funcionamiento (Vídeo)
 
 > [\!TIP]
-> **[ Haz clic aquí para ver el vídeo del sensor de luz](enlace)**
+> **[ Haz clic aquí para ver el vídeo del sensor de luz](https://drive.google.com/file/d/1zJbwFAdB_qnSSBTCI5L_vPtjYVlP-TeX/view?usp=drive_link)**
 
 -----
 
@@ -320,8 +311,5 @@ void loop() {
 
 ### Muestra de funcionamiento 
 
-A continuación se muestra el funcionamiento en el dispositivo físico, demostrando la respuesta del motor al pulsador:
-
-> [\!Video funcionamiento Requisito Ampliado 4]
-> **[Haz clic aquí para ver el vídeo de la demostración física](enlace)**
+> **[Haz clic aquí para ver el vídeo del motor]([enlace](https://drive.google.com/file/d/14XieaFvIhKaVEkI8q-A1XcVrB40KDHBX/view?usp=drive_link))**
 
