@@ -359,4 +359,4 @@ void loop()
 
 ### Muestra de funcionamiento
 
-> **[ Haz clic aquí para ver el vídeo de la simulación física con potenciómetro](https://drive.google.com/file/d/1QXF1sfrE2lgh22amGmbz4v42njAPy1Eg/view?usp=drive_link)**
+> **[ Haz clic aquí para ver el vídeo de la simulación con potenciómetro](https://drive.google.com/file/d/1eNl5oY3G14X0s5rQmQWUzn-ZSPkuCSxn/view?usp=drive_link)**
