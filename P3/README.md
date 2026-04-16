@@ -12,7 +12,7 @@
 | **Resistencias 220Ω (x3)** | Una por cada LED |
 
 ### Esquema de conexiones
-![Esquema semaforo LEDs](img/Requisito_1_Semáforo_de_3_LEDs.png)
+![Esquema semaforo LEDs](img/Requisito_1_Semáforo_de_3_LEDs.gif)
 
 ### Código Fuente
 
