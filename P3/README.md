@@ -214,7 +214,7 @@ void loop()
 
 ### Muestra de funcionamiento
 
-> **[ Haz clic aquí para ver el vídeo del detector de distancia](**https://drive.google.com/file/d/1QXF1sfrE2lgh22amGmbz4v42njAPy1Eg/view?usp=drive_link**)**
+> **[ Haz clic aquí para ver el vídeo del detector de distancia](https://drive.google.com/file/d/1F_CFB3-Y_G6RkROH66xGrHoZODZ8qc7e/view?usp=sharing)**
 
 -----
 
