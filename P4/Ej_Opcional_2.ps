@@ -1,0 +1,70 @@
+%!PS-Adobe-3.0
+%% Título: Ejercicio Opcional 2 - Tabla y Gráfica
+
+% --- CONFIGURACIÓN DE FUENTE ---
+/Helvetica findfont 12 scalefont setfont
+
+% =========================================================
+% PAGINA 1: TABLA DE DATOS
+% =========================================================
+
+100 700 moveto (Mi tabla de datos) show
+
+% Dibujar las líneas de la tabla 
+0.5 setlinewidth
+newpath
+100 600 moveto 400 600 lineto % Línea horizontal superior
+100 630 moveto 400 630 lineto % Línea horizontal media 
+100 660 moveto 400 660 lineto % Línea horizontal inferior
+100 600 moveto 100 660 lineto % Línea vertical izquierda
+250 600 moveto 250 660 lineto % Línea vertical media
+400 600 moveto 400 660 lineto % Línea vertical derecha
+stroke
+
+% Rellenar datos de la tabla
+110 640 moveto (Columna-1) show
+260 640 moveto (Columna-2) show
+110 610 moveto (42) show
+260 610 moveto (21) show
+
+% Pie de página 1
+300 50 moveto (1) show
+
+showpage % <--- PÁGINA 2
+
+% =========================================================
+% PAGINA 2: GRÁFICA DE CRESTA
+% =========================================================
+
+/Helvetica findfont 12 scalefont setfont
+100 700 moveto (La imagen) show
+
+% Dibujar Ejes (X e Y)
+newpath
+100 600 moveto 100 450 lineto % Eje Y
+100 450 moveto 350 450 lineto % Eje X
+stroke
+
+% Dibujar la Gráfica 
+1 0 0 setrgbcolor
+newpath
+100 480 moveto    % Punto 1
+140 540 lineto    % Punto 2 (sube)
+180 500 lineto    % Punto 3 (baja)
+220 560 lineto    % Punto 4 (sube más)
+260 510 lineto    % Punto 5 (baja)
+300 550 lineto    % Punto 6 (sube)
+stroke
+
+% Dibujar pequeños círculos en los nodos 
+newpath 140 540 2 0 360 arc fill
+newpath 180 500 2 0 360 arc fill
+newpath 220 560 2 0 360 arc fill
+newpath 260 510 2 0 360 arc fill
+newpath 300 550 2 0 360 arc fill
+
+% Pie de página 2 
+0 setgray
+300 50 moveto (2) show
+
+showpage 

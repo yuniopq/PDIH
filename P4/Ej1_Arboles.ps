@@ -1,0 +1,55 @@
+%!PS-Adobe-3.0
+%% Título: Ejercicio 1 - Árboles
+
+% --- Árbol 1 (el de la izquierda) ---
+newpath
+  160 100 moveto
+  180 100 lineto
+  180 300 lineto
+  160 300 lineto
+closepath
+0.4 0.2 0 setrgbcolor fill 
+
+0 0.6 0.2 setrgbcolor
+
+gsave
+  155 330 translate
+  0.7 1.3 scale
+  newpath 0 0 40 0 360 arc fill 
+grestore
+
+gsave
+  185 330 translate
+  0.7 1.3 scale
+  newpath 0 0 40 0 360 arc fill
+grestore
+
+gsave
+  170 380 translate
+  0.8 1.5 scale
+  newpath 0 0 45 0 360 arc fill
+grestore
+
+% --- Árbol 2 (el de la derecha) ---
+newpath
+  405 100 moveto
+  420 100 lineto
+  420 250 lineto
+  405 250 lineto
+closepath
+0.4 0.2 0 setrgbcolor fill
+
+0 0.7 0.3 setrgbcolor
+
+newpath 412.5 270 30 0 360 arc fill
+newpath 395 315 30 0 360 arc fill
+newpath 430 315 30 0 360 arc fill
+
+% --- Círculo central ---
+newpath 300 120 15 0 360 arc
+0.5 0.8 0 setrgbcolor fill
+
+newpath 300 120 15 0 360 arc
+1 0 0 setrgbcolor stroke
+
+showpage

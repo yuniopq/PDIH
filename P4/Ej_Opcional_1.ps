@@ -1,0 +1,39 @@
+%!PS-Adobe-3.0
+%% Título: Ejercicio Opcional 1 - Círculos y Sonrisa
+
+% 1. Definimos el tamaño de la hoja como A4 Apaisado
+<< /PageSize [842 595] >> setpagedevice
+
+% 2. Centramos el origen en la hoja
+% La mitad de 842 es 421, la mitad de 595 es 297
+421 297 translate
+
+% --- CÍRCULOS CONCÉNTRICOS ---
+0.3 0.4 0.8 setrgbcolor
+newpath 0 0 100 0 360 arc fill
+
+0.8 0.3 0.3 setrgbcolor
+newpath 0 0 80 0 360 arc fill
+
+0.6 0.4 0.8 setrgbcolor
+newpath 0 0 60 0 360 arc fill
+
+0.8 0.9 0.4 setrgbcolor
+newpath 0 0 40 0 360 arc fill
+
+0.9 0.9 0.9 setrgbcolor
+newpath 0 0 25 0 360 arc fill
+
+% --- CARITA ---
+0 setgray
+
+% Ojos
+newpath -8 8 2 0 360 arc fill
+newpath 8 8 2 0 360 arc fill
+
+% Sonrisa
+newpath
+  0 0 12 210 330 arc 
+stroke
+
+showpage

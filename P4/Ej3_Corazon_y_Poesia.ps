@@ -1,0 +1,47 @@
+%!PS-Adobe-3.0
+%% Título: Ejercicio 3 - Corazón y Poesía
+
+% --- DIBUJO DEL CORAZÓN ---
+1 0 0 setrgbcolor
+
+% --- CÍRCULO IZQUIERDO ---
+newpath 250 350 50 0 360 arc fill
+
+% --- CÍRCULO DERECHO ---
+newpath 350 350 50 0 360 arc fill
+
+% --- TRIÁNGULO ---
+newpath
+300 183 moveto
+203 331 lineto
+397 331 lineto
+closepath fill
+
+% --- RELLENO CENTRAL (para unir las piezas) ---
+newpath
+250 320 moveto 350 320 lineto 350 350 lineto 250 350 lineto
+closepath fill
+
+% --- TEXTO ---
+
+% Línea 1: Pequeña y gris
+0.6 setgray
+/Times-Italic findfont 10 scalefont setfont
+150 150 moveto (¿Que es poesia? -dices mientras clavas) show
+
+% Línea 2: Un poco más grande y oscura
+0.4 setgray
+/Times-Italic findfont 12 scalefont setfont
+150 130 moveto (en mi pupila tu pupila azul.) show
+
+% Línea 3: Negrita, más grande y casi negra
+0.2 setgray
+/Times-BoldItalic findfont 14 scalefont setfont
+150 105 moveto (¿Que es poesia? ¿Y tu me lo preguntas?) show
+
+% Línea 4: Grande y negro puro
+0 setgray
+/Times-BoldItalic findfont 16 scalefont setfont
+150 85 moveto (Poesia... eres tu.) show
+
+showpage

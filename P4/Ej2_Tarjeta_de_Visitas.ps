@@ -1,0 +1,49 @@
+%!PS-Adobe-3.0
+%% Título: Ejercicio 2 - Tarjeta de Visita
+
+% --- Rectángulo de la tarjeta ---
+newpath
+  100 500 moveto
+  450 500 lineto
+  450 700 lineto
+  100 700 lineto
+closepath
+
+0.68 0.85 0.90 setrgbcolor
+fill
+
+% --- Borde de la tarjeta ---
+newpath
+  100 500 moveto
+  450 500 lineto
+  450 700 lineto
+  100 700 lineto
+closepath
+
+0.8 setgray
+stroke
+
+% --- CÍRCULO/LOGO ---
+newpath
+  170 600 40 0 360 arc
+0.8 setgray fill
+
+newpath
+  170 600 40 0 360 arc
+0 setgray stroke
+
+% --- TEXTO ---
+/Times-Bold findfont 14 scalefont setfont
+300 630 moveto (Drago Kovacevic) show
+
+/Times-Roman findfont 10 scalefont setfont
+300 615 moveto (Ejecutivo de Cuentas) show
+
+/Times-Roman findfont 8 scalefont setfont
+300 580 moveto (P. de la Castellana, 141) show
+300 570 moveto (Local 2 - Edificio Cuzco IV) show
+300 560 moveto (28046 Madrid) show
+300 550 moveto (Tels. 914 174 550 / 669 896 224) show
+300 540 moveto (drago@serotel.es) show
+
+showpage
