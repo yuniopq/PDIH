@@ -11,8 +11,8 @@ library(audio)
 # Se han generado externamente 
 
 # 2. Leer los dos ficheros de sonido creados y dibujar la forma de onda
-nombre <- readWave("nombre.wav")
-apellido <- readWave("apellido.wav")
+nombre <- readWave("audio/nombre.wav")
+apellido <- readWave("audio/apellido.wav")
 
 plot(nombre)
 plot(apellido)
@@ -30,7 +30,7 @@ plot(nombre_completo, main = "Nombre y Apellido")
 listen(nombre_completo)
 
 # 6. Almacenar el sonido como "basico.wav"
-writeWave(nombre_completo, "basico.wav")
+writeWave(nombre_completo, "audio/basico.wav")
 
 # REQUISITOS AMPLIADOS
 
@@ -38,12 +38,22 @@ writeWave(nombre_completo, "basico.wav")
 filtrado <- bwfilter(nombre_completo, f = 44100, from = 10000, to = 20000, bandpass = FALSE, output = "Wave")
 
 plot(filtrado, main = "10kHz - 20kHz filtrados")
-writeWave(filtrado, "filtrado.wav")
+
+writeWave(filtrado, "audio/filtrado.wav")
 
 # 8. Aplicar el efecto de eco al sonido "basico.wav"
 sonido_eco <- echo(nombre_completo, f=44100, amp = c(0.5, 0.2), delay = c(0.5, 0.1), output = "Wave")
-writeWave(sonido_eco, "eco.wav")
+
+plot(sonido_eco, main = "Forma de onda con ECO")
+
+listen(sonido_eco)
+
+writeWave(sonido_eco, "audio/eco.wav")
 
 # Darle la vuelta al sonido (reversa) y almacenarlo como "alreves.wav"
 sonido_alreves <- revw(nombre_completo, output = "Wave")
-writeWave(sonido_alreves, "alreves.wav")
+
+plot(filtrado, main = "Al Revés")
+
+writeWave(sonido_alreves, "audio/alreves.wav")
+
