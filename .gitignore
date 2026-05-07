@@ -5,4 +5,5 @@ S1-codigo/
 *.EXE
 *.TR
 *.TD
+*.RData
 EOF
