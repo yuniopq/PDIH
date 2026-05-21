@@ -43,7 +43,7 @@ writeWave(filtrado, "audio/filtrado.wav")
 
 # 8. Aplicar el efecto de eco al sonido "basico.wav"
 sonido_eco <- echo(nombre_completo, f=44100, amp = c(0.5, 0.2), delay = c(0.5, 0.1), output = "Wave")
-
+sonido_eco <- 5000 * sonido_eco 
 plot(sonido_eco, main = "Forma de onda con ECO")
 
 listen(sonido_eco)
