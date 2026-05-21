@@ -25,8 +25,7 @@ Se ha estudiado el impacto del parámetro `scaleFactor`, comprobando cómo influ
 
 **Descripción:** Procesado de vídeo para la detección de rostros humanos empleando bucles continuos de captura (`cv2.VideoCapture`). Para optimizar el rendimiento y asegurar la robustez del algoritmo, cada fotograma se convierte dinámicamente a escala de grises antes de aplicar `detectMultiScale`. Los rostros localizados se encuadran con un rectángulo rojo.
 
-### Capturas del Funcionamiento
-Aquí se muestran momentos clave del vídeo donde el clasificador realiza el seguimiento continuo de los rostros:
+### Capturas 
 
 ![Detección en Vídeo 1](img/ej2_caras_en_video1.png)
 ![Detección en Vídeo 2](img/ej2_caras_en_video2.png)
@@ -37,8 +36,7 @@ Aquí se muestran momentos clave del vídeo donde el clasificador realiza el seg
 
 **Descripción:** Adaptación de la lógica de procesado de vídeo orientada al reconocimiento biométrico de felinos. En este ejercicio se hace uso del clasificador extendido `haarcascade_frontalcatface_extended.xml`, el cual ofrece una mayor tasa de acierto y tolerancia ante inclinaciones de la cabeza de los animales en entornos dinámicos en comparación con el modelo base.
 
-### Captura del Funcionamiento
-A continuación se observa el encuadre verde sobre la cara del gato detectado durante la reproducción del vídeo:
+### Captura 
 
 ![Detección de Gatos](img/ej3_caras_gato_.png)
 
@@ -50,7 +48,6 @@ A continuación se observa el encuadre verde sobre la cara del gato detectado du
 
 Para asegurar una visualización clara y cumplir con el requisito de simultaneidad, los resultados se superponen sobre la misma ventana interactiva empleando códigos de color diferenciados: **Azul** para los cuerpos y **Rojo** para los rostros.
 
-### Captura del Funcionamiento
-En la siguiente captura se aprecia cómo el programa delimita de manera coordinada tanto la silueta corporal como las facciones de los individuos presentes en el vídeo:
+### Captura
 
 ![Detección Simultánea](img/ej4_cuerpos_caras.png)
